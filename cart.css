@@ -1,0 +1,167 @@
+/* Kosár konténer */
+#cart {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kosár cím */
+.cart-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Végösszeg rész */
+.total-amount {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Kosár táblázat */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Táblázat sorok váltakozó színei */
+.cart-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.cart-table tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+/* Táblázat fejlécek */
+.cart-table th {
+    background-color: #dddddd;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Táblázat cellák */
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    font-size: 16px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Mennyiség input mező */
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    pointer-events: none;
+}
+
+/* Mennyiség gombok */
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn:hover {
+    background-color: #ff4736;
+}
+
+/* Eltávolítás és Pénztárhoz gombok */
+.remove-btn, .checkout-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Pénztárhoz gomb hover stílus */
+.checkout-btn:hover {
+    background-color: #ff4736;
+    text-decoration: none;
+}
+
+/* Pénztárhoz gomb megjelenítése */
+.checkout-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Üres kosár üzenet */
+.cart-empty-message {
+    text-align: center;
+    padding: 30px;
+    margin: 20vh auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-empty-message h2 {
+    color: #ff6f61;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cart-empty-message p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Üres kosár üzenet link */
+.cart-empty-message .shop-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cart-empty-message .shop-link:hover {
+    background-color: #ff4736;
+}

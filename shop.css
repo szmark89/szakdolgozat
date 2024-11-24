@@ -1,0 +1,90 @@
+.shop-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.search-bar input {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+.filter-bar .btn-group-toggle .btn:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.product .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product .card:hover {
+    transform: scale(1.02);
+}
+
+.product .card-description {
+    color: #666; /* Sötétszürke szövegszín */
+}
+
+.product .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.product .card-body {
+    background-color: white;
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product .card-text {
+    color: #ff6f61;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-add-to-cart {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #ff4736;
+}
+
+@media (max-width: 768px) {
+    .product .card {
+        height: auto;
+    }
+    .product .card-img-top {
+        height: 150px;
+    }
+}

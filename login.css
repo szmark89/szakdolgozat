@@ -1,0 +1,118 @@
+/* Modal alap stílus */
+.modal {
+    display: none; /* Alapértelmezetten rejtett */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Sötét háttér, áttetsző kicsikét */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Modal kicsit feljebb */
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Tartalom középre igazítása */
+}
+
+.modal-content h2 {
+    margin: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px; /* A modal jobb felső sarkában jelenik meg */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#loginForm input[type="text"], #loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+#loginForm input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: #ff4736;
+}
+
+/* Toast értesítés stílusa a hibákhoz (piros) */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #ff4d4d; /* Piros háttér a hibás jelszóhoz */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 30px; opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { bottom: 30px; opacity: 1; }
+    to { bottom: 0; opacity: 0; }
+}
+
+/* Toast értesítés a kijelentkezéshez (zöld) */
+#successToast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #4CAF50; /* Zöld háttér a sikeres kijelentkezéshez */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#successToast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+

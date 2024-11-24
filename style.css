@@ -1,0 +1,344 @@
+/* Általános beállítások */
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.navbar {
+    padding: 10px 20px;
+    background-color: #333; /* Sötétebb háttér a jobb kontraszthoz */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: white; /* Fehér szín a jobb olvashatóság érdekében */
+    margin-left: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f7f7f7; /* Fehér szöveg a jobb olvashatóságért */
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6f61; /* Esküvői színek kiemeléséhez */
+}
+
+.btn-login {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    border: 2px solid #ff6f61;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Szöveg és háttér változás */
+}
+
+.btn-login:hover {
+    background-color: #fff;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('img/wedding_bg.jpg'); /* Esküvői háttérkép */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+    color: white;
+    margin-bottom: 80px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Átlátszó fekete réteg a kép felett */
+    z-index: 1;
+}
+
+.hero .text-background {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9); /* Növelt opacitás */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Erősebb árnyék */
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #ff6f61;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #333; /* Sötétebb szín a jobb olvashatóság érdekében */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #ff4736;
+}
+
+/* Bemutatkozó szekció */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.slider-custom-height {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+.carousel-item img {
+    filter: brightness(0.7);
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 20%;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.category-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.category-img {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-container:hover .category-img {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.category-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #f7f7f7;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+/* Services section */
+.service-wrapper {
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services h3 {
+    color: #ff6f61;
+    margin-bottom: 15px; /* Növelt margó a szöveg és a kártya között */
+}
+
+.services p {
+    margin-bottom: 20px; /* Növelt margó a leírások aljánál is */
+}
+
+/* Kapcsolat szekció */
+.contact {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #ff4736;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.category-img, .service-wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-img img, .service-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 5px;
+}
+
+.cart-button {
+    display: inline-block;
+    background-color: #ff6f61; /* Kék szín */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.cart-button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.cart-button:hover {
+    background-color: #fff;
+    color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+/* Admin (Vezérlőpult) gomb */
+#adminBtn {
+    display: inline-block;
+    background-color: #007bff; /* Kék szín */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+#adminBtn i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+#adminBtn:hover {
+    background-color: #0056b3; /* Sötétebb kék szín hover esetén */
+    color: white;
+    border-color: #007bff;
+}
+
+/* Mobilnézet */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Sorköz mobilon */
+    }
+
+    .navbar-collapse {
+        padding: 10px;
+    }
+}
